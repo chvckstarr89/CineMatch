@@ -2,15 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Custom scrollbar hiding for cleaner UI */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
 
-#root {
-  min-height: 100vh;
+body {
+  background-color: #0a0a0a; /* Neutral-950 matches app theme */
 }
